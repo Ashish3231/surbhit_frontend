@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
 <!--
 
 TemplateMo 574 Mexant
@@ -428,25 +429,7 @@ https://templatemo.com/tm-574-mexant
           </div>
         </div>
         <div class="col-lg-10 offset-lg-1">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
-              <h4>David Eigenberg</h4>
-              <span>CEO of Mexant</span>
-            </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
-              <h4>Andrew Garfield</h4>
-              <span>CTO of Mexant</span>
-            </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
-              <h4>George Lopez</h4>
-              <span>Crypto Manager</span>
-            </div>
+          <div class="owl-testimonials owl-carousel" id="testimonial-carousel" style="position: relative; z-index: 5;">
           </div>
         </div>
       </div>
@@ -556,6 +539,8 @@ https://templatemo.com/tm-574-mexant
       };
 
       var swiper = new Swiper(".swiper-container", swiperOptions);
-    </script>
+    </script> 
+        <script src="api/testimonial.js"></script>
+  
   </body>
 </html>
