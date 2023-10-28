@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
       desg: desg,
       message: message
     };
-    fetch('http://127.0.0.1:8080/testimonial', {
+    fetch('https://surbhitbackend-production.up.railway.app/testimonial', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {

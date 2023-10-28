@@ -18,7 +18,7 @@ document.getElementById('upadteCompany').addEventListener('submit', function (ev
   
   
     // Define the URL of your API endpoint
-    const apiUrl = 'http://127.0.0.1:8080/company';
+    const apiUrl = 'https://surbhitbackend-production.up.railway.app/company';
   
     // Make an HTTP POST request using fetch
     fetch(apiUrl, {
