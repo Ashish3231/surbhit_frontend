@@ -91,7 +91,7 @@ https://templatemo.com/tm-574-mexant
             </div>
           </div>
           <div class="col-lg-10 offset-lg-1">
-            <form id="contact" class="add-testa" action="" method="post">
+            <form id="testimonialForm" class="add-testa" action="" method="post">
               <div class="row">
                 <div class="col-lg-6">
                   <fieldset>
@@ -100,7 +100,7 @@ https://templatemo.com/tm-574-mexant
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
-                    <input type="text" name="Designation" id="designation" placeholder="Designation" autocomplete="on" />
+                    <input type="text" name="desg" id="designation" placeholder="Designation" autocomplete="on" />
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
@@ -115,6 +115,7 @@ https://templatemo.com/tm-574-mexant
                 </div>
               </div>
             </form>
+            <div id="responseMessageForTestimonialCreate"></div>
           </div>
         </div>
       </div>
@@ -129,8 +130,13 @@ https://templatemo.com/tm-574-mexant
             </div>
           </div>
           <div class="col-lg-10 offset-lg-1">
-            <form id="contact" action="" method="post">
+            <form id="upadteCompany" action="" method="post">
               <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input type="text" name="company" id="company" placeholder="Company" autocomplete="on" />
+                  </fieldset>
+                </div>
                 <div class="col-lg-6">
                   <fieldset>
                     <input type="text" name="adrs" id="adrs1" placeholder="Address line 1" autocomplete="on" />
@@ -163,17 +169,17 @@ https://templatemo.com/tm-574-mexant
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
-                    <input type="text" name="phone1" id="phone" placeholder="Phone 1" autocomplete="on" />
+                    <input type="text" name="phone1" id="phone1" placeholder="Phone 1" autocomplete="on" />
                   </fieldset>
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
-                    <input type="text" name="phone2" id="phone" placeholder="Phone 2" autocomplete="on" />
+                    <input type="text" name="phone2" id="phone2" placeholder="Phone 2" autocomplete="on" />
                   </fieldset>
                 </div>
                 <div class="col-lg-6">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" required="" />
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" />
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
@@ -183,6 +189,24 @@ https://templatemo.com/tm-574-mexant
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading">
+              <h6>Testimonials</h6>
+              <h4>here you can delete Testimonial</h4>
+            </div>
+          </div>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="owl-testimonials owl-carousel" id="testimonial-carousel" style="position: relative; z-index: 5;">
+            </div>
           </div>
         </div>
       </div>
@@ -213,8 +237,7 @@ https://templatemo.com/tm-574-mexant
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="api/admin-home.js"></script>
-    <script src="api/getTestimonial.js"></script>
+    <script src="api/company.js"></script>
     <script>
       var interleaveOffset = 0.5
 
@@ -257,5 +280,10 @@ https://templatemo.com/tm-574-mexant
 
       var swiper = new Swiper('.swiper-container', swiperOptions)
     </script>
+       
+    <script src="api/getTestimonialForDelete.js"></script>
+    <script src="api/testimonialDelete.js"></script>
+    <script src="api/createTestimonial.js"></script>
+
   </body>
 </html>

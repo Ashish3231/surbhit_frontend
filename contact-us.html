@@ -104,21 +104,21 @@ https://templatemo.com/tm-574-mexant
                 <div class="info-item">
                   <i class="fa fa-envelope"></i>
                   <h4>Email Address</h4>
-                  <a href="#">info@company.com</a>
+                  <a href="#" id = "email">info@company.com</a>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="info-item">
                   <i class="fa fa-phone"></i>
                   <h4>Phone Number</h4>
-                  <a href="#">010-020-0340</a>
+                  <a href="#" id = "phn">010-020-0340</a>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="info-item">
                   <i class="fa fa-map-marked-alt"></i>
                   <h4>Address</h4>
-                  <a href="#">Victoria, Australia</a>
+                  <a href="#" id= "address">Victoria, Australia</a>
                 </div>
               </div>
             </div>
@@ -279,6 +279,30 @@ https://templatemo.com/tm-574-mexant
       }
 
       var swiper = new Swiper('.swiper-container', swiperOptions)
+    </script>
+    <script>
+      // Function to fetch data from the API
+    async function fetchDataFromAPI() {
+      try {
+        const response = await fetch('http://127.0.0.1:8080/company/1'); // Replace with your API endpoint
+        if (!response.ok) {
+          throw new Error('API request failed');
+        }
+        const res = await response.json();
+        const data = res.data
+        console.log(data)
+        // Update the HTML elements with the retrieved data
+        document.getElementById('email').textContent = data.email;
+        document.getElementById('phn').textContent = data.phone1 + ', ' + data.phone2;
+        document.getElementById('address').textContent = data.add1 + ', ' + data.add2 + ', ' + data.add3 + ', ' + data.city + ', ' + data.state + ', ' + data.country;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    // Call the function to fetch and update data
+    fetchDataFromAPI();
+
     </script>
   </body>
 </html>
