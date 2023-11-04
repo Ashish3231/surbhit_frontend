@@ -193,12 +193,12 @@ body {
 }
 
 ::selection {
-  background: #ff511a;
+  background: #24b1bc;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ff511a;
+  background: #24b1bc;
   color: #fff;
 }
 
@@ -239,7 +239,7 @@ body {
 .orange-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #ff511a;
+  background-color: #24b1bc;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -268,7 +268,7 @@ section {
 .section-heading h6 {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ff511a;
+  color: #24b1bc;
   font-weight: 700;
 }
 
@@ -419,12 +419,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #ff511a;
+  color: #24b1bc;
   opacity: 1;
 }
 
@@ -484,7 +484,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #ff511a !important;
+  color: #24b1bc !important;
   padding-left: 25px;
 }
 
@@ -624,7 +624,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 @media (max-width: 1200px) {
@@ -643,7 +643,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ff511a !important;
+    color: #24b1bc !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -705,7 +705,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #ff511a !important;
+    color: #24b1bc !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -841,7 +841,7 @@ banner
 
 .slide-inner .header-text h2 em {
   font-style: normal;
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 .slide-inner .header-text .buttons {
@@ -929,7 +929,7 @@ section.simple-cta h4 em {
 }
 
 section.simple-cta h4 strong {
-  color: #ff511a;
+  color: #24b1bc;
   font-weight: 700;
 }
 
@@ -988,7 +988,7 @@ section.about-us .naccs .menu div {
 }
 
 section.about-us .naccs .menu div.active {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 section.about-us ul.nacc {
@@ -1119,7 +1119,7 @@ section.calculator .section-heading h4 {
 #calculate button.orange-button {
   font-size: 14px;
   color: #fff;
-  background-color: #ff511a;
+  background-color: #24b1bc;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -1223,7 +1223,7 @@ section.testimonials .section-heading {
 }
 
 .testimonials .owl-dots .active {
-  background-color: #ff511a;
+  background-color: #24b1bc;
 }
 
 /* 
@@ -1265,7 +1265,7 @@ footer p {
 }
 
 footer p a {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 /* 
@@ -1486,7 +1486,7 @@ section.service-details .naccs .menu div {
 }
 
 section.service-details .naccs .menu div.active {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 section.service-details ul.nacc {
@@ -1611,7 +1611,7 @@ section.map .info-item a {
 }
 
 section.map .info-item a:hover {
-  color: #ff511a;
+  color: #24b1bc;
 }
 
 #contact input, #testimonialForm  input, #upadteCompany input {
@@ -1651,7 +1651,7 @@ section.map .info-item a:hover {
 #contact button.orange-button, #testimonialForm button.orange-button, #upadteCompany button.orange-button{
   font-size: 14px;
   color: #fff;
-  background-color: #ff511a;
+  background-color: #24b1bc;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
