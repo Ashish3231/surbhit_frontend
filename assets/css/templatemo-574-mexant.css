@@ -278,7 +278,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #212741;
+  color: #24b1bc;
 }
 
 .section-heading p {
@@ -859,7 +859,7 @@ banner
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff !important;
-}
+  visibility: hidden;}
 
 /*
 ---------------------------------------------
@@ -1817,7 +1817,7 @@ body {
 /* footer */
 footer {
   /* background-color: #333; */
-  margin-top: 100px;
+  /* margin-top: 100px; */
   color: white;
   padding: 20px;
   text-align: center;
