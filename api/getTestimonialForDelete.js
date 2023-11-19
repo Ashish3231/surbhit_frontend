@@ -1,7 +1,9 @@
  // Function to fetch testimonials from the API
+// const local = 'http://127.0.0.1:8080'
+// const prod = 'https://surbhitbackend-production.up.railway.app'
  async function fetchTestimonials() {
   try {
-    const response = await fetch('https://surbhitbackend-production.up.railway.app/testimonial'); // Adjust the API URL as needed
+    const response = await fetch(local + '/testimonial'); // Adjust the API URL as needed
     const data = await response.json();
 
     if (data.success) {

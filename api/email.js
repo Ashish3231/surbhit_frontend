@@ -1,3 +1,6 @@
+const local = 'http://127.0.0.1:8080'
+const prod = 'https://surbhitbackend-production.up.railway.app'
+
 document.getElementById('calculate').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the default form submission
 
@@ -14,7 +17,7 @@ document.getElementById('calculate').addEventListener('submit', function (e) {
     const jsonData = JSON.stringify(jsonObject);
 
     // Make a fetch request
-    fetch('https://surbhitbackend-production.up.railway.app/email', {
+    fetch(local +'/email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

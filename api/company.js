@@ -1,4 +1,7 @@
 // Add an event listener to capture the form submission
+const local = 'http://127.0.0.1:8080'
+const prod = 'https://surbhitbackend-production.up.railway.app'
+
 document.getElementById('upadteCompany').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
   
@@ -13,12 +16,14 @@ document.getElementById('upadteCompany').addEventListener('submit', function (ev
         phone1: document.getElementById('phone1').value.trim() === '' ? null : document.getElementById('phone1').value,
         phone2: document.getElementById('phone2').value.trim() === '' ? null : document.getElementById('phone2').value,
         email: document.getElementById('email').value.trim() === '' ? null : document.getElementById('email').value,
-        company: document.getElementById('company').value.trim() === '' ? null : document.getElementById('company').value
+        company: document.getElementById('company').value.trim() === '' ? null : document.getElementById('company').value,
+        title: document.getElementById('title').value.trim() === '' ? null : document.getElementById('title').value,
+        content: document.getElementById('content').value.trim() === '' ? null : document.getElementById('content').value
     };
   
   
     // Define the URL of your API endpoint
-    const apiUrl = 'https://surbhitbackend-production.up.railway.app/company';
+    const apiUrl = local + '/company';
   
     // Make an HTTP POST request using fetch
     fetch(apiUrl, {

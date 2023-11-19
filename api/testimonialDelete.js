@@ -1,8 +1,9 @@
-  
+// const local = 'http://127.0.0.1:8080'
+// const prod = 'https://surbhitbackend-production.up.railway.app'  
 // Function to delete a testimonial by ID
 async function deleteTestimonial(id) {
     try {
-        const response = await fetch(`https://surbhitbackend-production.up.railway.app/testimonial/${id}`, {
+        const response = await fetch(local + `/testimonial/${id}`, {
             method: 'DELETE',
         });
 

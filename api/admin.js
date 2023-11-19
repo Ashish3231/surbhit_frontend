@@ -1,5 +1,7 @@
 const loginForm = document.getElementById('contact')
 const loginMessage = document.getElementById('login-err')
+const local = 'http://127.0.0.1:8080'
+const prod = 'https://surbhitbackend-production.up.railway.app'
 
 loginForm.addEventListener('submit', function (event) {
   event.preventDefault()
@@ -8,7 +10,7 @@ loginForm.addEventListener('submit', function (event) {
   const password = document.getElementById('password').value
 
   // Send the username and password to your backend API for verification
-  fetch('https://surbhitbackend-production.up.railway.app/user?email=' + email + '&password=' + password, {
+  fetch(local +'/user?email=' + email + '&password=' + password, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
