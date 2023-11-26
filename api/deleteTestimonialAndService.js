@@ -3,7 +3,7 @@
 // Function to delete a testimonial by ID
 async function deleteTestimonial(id) {
     try {
-        const response = await fetch(local + `/testimonial/${id}`, {
+        const response = await fetch(prod + `/testimonial/${id}`, {
             method: 'DELETE',
         });
 
@@ -28,7 +28,7 @@ async function deleteTestimonial(id) {
 
 async function deleteService(id) {
     try {
-        const response = await fetch(local + `/service/${id}`, {
+        const response = await fetch(prod + `/service/${id}`, {
             method: 'DELETE',
         });
 

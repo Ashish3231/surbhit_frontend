@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
       desg: desg,
       message: message
     };
-    fetch(local + '/testimonial', {
+    fetch(prod + '/testimonial', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
@@ -61,7 +61,7 @@ const formData = new FormData();
 formData.append('file', file); // Append the file to the form data
 formData.append('service', service);
 // Assuming your API endpoint is 'YOUR_API_ENDPOINT'
-const apiEndpoint = local + '/service';
+const apiEndpoint = prod + '/service';
 console.log("formData: ",formData)
 fetch(apiEndpoint, {
     method: 'POST',

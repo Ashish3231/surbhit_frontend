@@ -337,7 +337,7 @@ https://templatemo.com/tm-574-mexant
       const prod = 'https://surbhitbackend-production.up.railway.app'
      async function fetchDataFromAPI() {
       try {
-        const response = await fetch(local + '/company/1'); // Replace with your API endpoint
+        const response = await fetch(prod + '/company/1'); // Replace with your API endpoint
         if (!response.ok) {
           throw new Error('API request failed');
         }
@@ -360,7 +360,7 @@ https://templatemo.com/tm-574-mexant
     </script>
     <script>
       // Fetch data from an API endpoint
-      fetch(local + '/service')
+      fetch(prod + '/service')
         .then(response => response.json())
         .then(data => {
           const servicesContainer = document.getElementById('services-container');
