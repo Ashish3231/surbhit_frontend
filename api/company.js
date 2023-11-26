@@ -2,6 +2,8 @@
 const local = 'http://127.0.0.1:8080'
 const prod = 'https://surbhitbackend-production.up.railway.app'
 
+const responseMessageCompany = document.getElementById('responseMessageForCompany');
+
 document.getElementById('upadteCompany').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
   
@@ -42,6 +44,7 @@ document.getElementById('upadteCompany').addEventListener('submit', function (ev
       })
       .then(data => {
         console.log('Response:', data);
+        responseMessageCompany.innerHTML = 'updated successfully!';
         // Handle the response data here
       })
       .catch(error => {

@@ -1,5 +1,6 @@
 const form = document.getElementById('testimonialForm');
 const responseMessage = document.getElementById('responseMessageForTestimonialCreate');
+const responseMessageService = document.getElementById('responseMessageForServiceCreate');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -76,6 +77,12 @@ fetch(apiEndpoint, {
 .then(data => {
     console.log('Service created successfully:', data);
     // You can add further actions upon successful creation of the service
+        if (data.success) {
+            responseMessageService.innerHTML = 'Service submitted successfully!';
+        } else {
+            responseMessageService.innerHTML = 'Error: Service submission failed.';
+        }
+
 })
 .catch(error => {
     console.error('There was an error creating the service:', error);

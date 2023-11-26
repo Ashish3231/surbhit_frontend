@@ -1,5 +1,3 @@
-const local = 'http://127.0.0.1:8080'
-const prod = 'https://surbhitbackend-production.up.railway.app'
 
 document.getElementById('calculate').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the default form submission
