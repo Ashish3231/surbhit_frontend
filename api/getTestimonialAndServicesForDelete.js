@@ -56,6 +56,48 @@
   }
 }
 
+async function fetchServices() {
+  try {
+    const response = await fetch(local + '/service'); // Adjust the API URL as needed
+    const data = await response.json();
+
+    if (data.success) {
+      const servicesContainer = document.getElementById('services-container');
+      const services = data.services
+      for (let i = 0; i < services.length; i++) {
+        const service = services[i];
+        const serviceItem = document.createElement('div');
+        serviceItem.classList.add('item');
+        serviceItem.id = `service-${service.id}`;
+        serviceItem.classList.add('col-lg-6');   
+        const serviceContent = document.createElement('div');
+        serviceContent.classList.add('service-item');
+        const base64String = service.logo;
+        const deleteIcon = document.createElement('i');
+        deleteIcon.classList.add('fa', 'fa-trash', 'delete',`service-${service.id}`);
+        // deleteIcon.setAttribute('data-testimonial-id', testimonial.id);
+        deleteIcon.addEventListener('click', () => {
+            console.log("............",service.id)
+            deleteService(parseInt(service.id));
+        });
+        serviceContent.innerHTML = `
+          <img src = 'data:image/jpeg;base64, ${base64String}' >
+          <h4>${service.title}</h4>
+          <p>${service.content}</p>
+        `;
+        serviceContent.appendChild(deleteIcon);
+        serviceItem.appendChild(serviceContent);
+        servicesContainer.appendChild(serviceItem);
+      }
+    } else {
+      console.error(data.message); // Handle error
+    }
+  } catch (error) {
+    console.error(error); // Handle error
+  }
+}
+
 // Call the fetchTestimonials function to load testimonials when the page loads
+window.addEventListener('load', fetchServices);
 window.addEventListener('load', fetchTestimonials);
 

@@ -18,7 +18,8 @@ document.getElementById('upadteCompany').addEventListener('submit', function (ev
         email: document.getElementById('email').value.trim() === '' ? null : document.getElementById('email').value,
         company: document.getElementById('company').value.trim() === '' ? null : document.getElementById('company').value,
         title: document.getElementById('title').value.trim() === '' ? null : document.getElementById('title').value,
-        content: document.getElementById('content').value.trim() === '' ? null : document.getElementById('content').value
+        content: document.getElementById('content').value.trim() === '' ? null : document.getElementById('content').value,
+        about: document.getElementById('about').value.trim() === '' ? null : document.getElementById('about').value
     };
   
   

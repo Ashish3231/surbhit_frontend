@@ -186,130 +186,9 @@ https://templatemo.com/tm-574-mexant
             <!-- <h4>Know Us Better</h4> -->
           </div>
         </div>
-        <!-- <div class="col-lg-8">
-          <div class="naccs">
-            <div class="tabs">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Web Design</span></div>
-                    <div class="gradient-border"><span>Graphics</span></div>
-                    <div class="gradient-border"><span>Web Coding</span></div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="main-list">
-                          <span class="title">Project Title</span>
-                          <span class="title">Budget</span>
-                          <span class="title">Deadline</span>
-                          <span class="title">Client</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Website Redesign</span>
-                          <span class="item">$1,500 to $2,200</span>
-                          <span class="item">2022 Dec 12</span>
-                          <span class="item">Web Biz</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Website Renovation</span>
-                          <span class="item">$2,500 to $3,600</span>
-                          <span class="item">2022 Dec 10</span>
-                          <span class="item">Online Ads</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Marketing Plan</span>
-                          <span class="item">$2,500 to $4,200</span>
-                          <span class="item">2022 Dec 8</span>
-                          <span class="item">Web Biz</span>
-                        </div>
-                        <div class="list-item last-item">
-                          <span class="item item-title">All-new Website</span>
-                          <span class="item">$3,000 to $6,600</span>
-                          <span class="item">2022 Dec 2</span>
-                          <span class="item">Web Presence</span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="main-list">
-                          <span class="title">Project Title</span>
-                          <span class="title">Budget</span>
-                          <span class="title">Deadline</span>
-                          <span class="title">Client</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Graphics Redesign</span>
-                          <span class="item">$500 to $800</span>
-                          <span class="item">2022 Nov 24</span>
-                          <span class="item">Media One</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Digital Graphics</span>
-                          <span class="item">$1,500 to $3,000</span>
-                          <span class="item">2022 Nov 18</span>
-                          <span class="item">Second Media</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">New Artworks</span>
-                          <span class="item">$2,200 to $4,400</span>
-                          <span class="item">2022 Nov 10</span>
-                          <span class="item">Artwork Push</span>
-                        </div>
-                        <div class="list-item last-item">
-                          <span class="item item-title">Complex Arts</span>
-                          <span class="item">$1,100 to $2,400</span>
-                          <span class="item">2022 Nov 3</span>
-                          <span class="item">Media One</span>
-                        </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="main-list">
-                          <span class="title">Project Title</span>
-                          <span class="title">Budget</span>
-                          <span class="title">Estimated</span>
-                          <span class="title">Technology</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Backend Coding</span>
-                          <span class="item">$2,000 to $5,000</span>
-                          <span class="item">2022 Nov 28</span>
-                          <span class="item">PHP MySQL</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">New Web App</span>
-                          <span class="item">$1,500 to $3,000</span>
-                          <span class="item">2022 Nov 18</span>
-                          <span class="item">Python Programming</span>
-                        </div>
-                        <div class="list-item">
-                          <span class="item item-title">Frontend Interactions</span>
-                          <span class="item">$3,000 to $6,000</span>
-                          <span class="item">2022 Nov 10</span>
-                          <span class="item">JavaScripts</span>
-                        </div>
-                        <div class="list-item last-item">
-                          <span class="item item-title">Video Creations</span>
-                          <span class="item">$1,800 to $4,400</span>
-                          <span class="item">2022 Nov 3</span>
-                          <span class="item">Multimedia</span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="col-lg-12">
           <div class="right-content">
-            <h4>Please tell us about your idea and how you want it to be</h4>
-            <p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the template ZIP file on any other template websites.<br><br>Thank you for downloading and using our templates. Please tell your friends about our website.</p>
+            <p id="about-p">You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the template ZIP file on any other template websites.<br><br>Thank you for downloading and using our templates. Please tell your friends about our website.</p>
             <!-- <div class="green-button">
               <a href="about-us.html">Discover More</a>
             </div> -->
@@ -466,6 +345,7 @@ https://templatemo.com/tm-574-mexant
         const data = res.data
         console.log(data)
         // Update the HTML elements with the retrieved data
+        document.getElementById('about').querySelector('p').innerHTML = data.about;
         document.getElementById('header-text').querySelector('h2').textContent = data.title;
         document.getElementById('header-text').querySelector('p').textContent = data.content;
 
@@ -484,19 +364,16 @@ https://templatemo.com/tm-574-mexant
         .then(response => response.json())
         .then(data => {
           const servicesContainer = document.getElementById('services-container');
-          
-          // Iterate through the fetched data and create HTML structure
-          console.log("data: ", data)
-          // data.forEach(service => {
-            const services = data.services
+          const services = data.services
           for (let i = 0; i < services.length; i++) {
             const service = services[i];
             const serviceItem = document.createElement('div');
             serviceItem.classList.add('col-lg-6');   
             const serviceContent = document.createElement('div');
             serviceContent.classList.add('service-item');
+            const base64String = service.logo;
             serviceContent.innerHTML = `
-              <img src = ${service.logo}>
+              <img src = 'data:image/jpeg;base64, ${base64String}' >
               <h4>${service.title}</h4>
               <p>${service.content}</p>
             `;

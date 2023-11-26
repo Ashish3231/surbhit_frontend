@@ -1181,6 +1181,14 @@ section.testimonials .section-heading {
   border-radius: 5px;
   margin-bottom: 30px;
 }
+.delete{
+  background-color: white;
+  display: inline-block;
+  color:  #c41c1c;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
 
 .testimonials .item p {
   font-size: 16px;
@@ -1616,7 +1624,7 @@ section.map .info-item a:hover {
   color: #24b1bc;
 }
 
-#contact input, #testimonialForm  input, #upadteCompany input {
+#contact input, #testimonialForm  input, #upadteCompany input, #addService input {
   width: 100%;
   height: 50px;
   background-color: #f7f7f7;
@@ -1646,11 +1654,12 @@ section.map .info-item a:hover {
 
 #contact input::placeholder,#contact textarea::placeholder, 
 #testimonialForm input::placeholder,#testimonialForm textarea::placeholder,
-#upadteCompany input::placeholder,#upadteCompany textarea::placeholder
+#upadteCompany input::placeholder,#upadteCompany textarea::placeholder,
+#addService input::placeholder,#addService textarea::placeholder
 {
   color: #212741;
 }
-#contact button.orange-button, #testimonialForm button.orange-button, #upadteCompany button.orange-button{
+#contact button.orange-button, #testimonialForm button.orange-button, #upadteCompany button.orange-button, #addService button.orange-button{
   font-size: 14px;
   color: #fff;
   background-color: #24b1bc;
@@ -1667,7 +1676,8 @@ section.map .info-item a:hover {
 
 #contact button.orange-button:hover, 
 #testimonialForm button.orange-button:hover, 
-#upadteCompany button.orange-button:hover
+#upadteCompany button.orange-button:hover,
+#addService button.orange-button:hover
 {
   background-color: #24b1bc;
 }

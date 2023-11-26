@@ -24,3 +24,28 @@ async function deleteTestimonial(id) {
         // Handle network or other errors
     }
 }
+
+
+async function deleteService(id) {
+    try {
+        const response = await fetch(local + `/service/${id}`, {
+            method: 'DELETE',
+        });
+
+        if (response.status === 200) {
+            console.log('service deleted successfully');
+            // Remove the deleted testimonial from the UI
+            const listItem = document.getElementById(`service-${id}`);
+            listItem.remove();
+        } else if (response.status === 404) {
+            console.log('Testimonial not found or already deleted');
+            // Handle not found error
+        } else {
+            console.log('Error deleting testimonial');
+            // Handle other errors
+        }
+    } catch (error) {
+        console.error('An error occurred:', error);
+        // Handle network or other errors
+    }
+}
