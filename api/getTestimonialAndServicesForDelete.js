@@ -3,7 +3,7 @@
 // const prod = 'https://surbhitbackend-production.up.railway.app'
  async function fetchTestimonials() {
   try {
-    const response = await fetch(local + '/testimonial'); // Adjust the API URL as needed
+    const response = await fetch(prod + '/testimonial'); // Adjust the API URL as needed
     const data = await response.json();
 
     if (data.success) {
@@ -58,7 +58,7 @@
 
 async function fetchServices() {
   try {
-    const response = await fetch(local + '/service'); // Adjust the API URL as needed
+    const response = await fetch(prod + '/service'); // Adjust the API URL as needed
     const data = await response.json();
 
     if (data.success) {

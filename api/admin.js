@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', function (event) {
   const password = document.getElementById('password').value
 
   // Send the username and password to your backend API for verification
-  fetch(local +'/user?email=' + email + '&password=' + password, {
+  fetch(prod +'/user?email=' + email + '&password=' + password, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'

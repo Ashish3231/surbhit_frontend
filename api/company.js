@@ -26,7 +26,7 @@ document.getElementById('upadteCompany').addEventListener('submit', function (ev
   
   
     // Define the URL of your API endpoint
-    const apiUrl = local + '/company';
+    const apiUrl = prod + '/company';
   
     // Make an HTTP POST request using fetch
     fetch(apiUrl, {

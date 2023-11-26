@@ -15,7 +15,7 @@ document.getElementById('calculate').addEventListener('submit', function (e) {
     const jsonData = JSON.stringify(jsonObject);
 
     // Make a fetch request
-    fetch(local +'/email', {
+    fetch(prod +'/email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
